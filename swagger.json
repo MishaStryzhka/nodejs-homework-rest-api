@@ -22,7 +22,7 @@
             "description": "Authorization endpoints"
         },
         {
-            "name": "Comtacts",
+            "name": "Contacts",
             "description": "Contacts endpoints"
         }
     ],
