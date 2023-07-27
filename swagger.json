@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "version": "1.0.0",
+        "title": "Swagger test",
+        "description": "qweqwe",
+        "license": {
+            "name": "MIT",
+            "url": "https://www.linkedin.com/in/mykhailo-stryzhka/"
+        }
+    },
+    "consumes": ["application/json", "multipart/form-data"],
+    "produces": ["application/json"],
+    "servers": [
+        {
+            "url": "https://nodejs-homework-rest-api-rz1d.onrender.com"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Auth",
+            "description": "Authorization endpoints"
+        },
+        {
+            "name": "Comtacts",
+            "description": "Contacts endpoints"
+        }
+    ],
+    "paths": {
+        "/api/users/register": {
+            "post": {
+                "tags": ["Auth"],
+                "summary": "User registration",
+                "parameters": [],
+                "security": [{ "Bearer": [] }],
+                "requestBody": {
+                    "description": "Registrations object",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/schemas/users/registerSchema"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
