@@ -35,14 +35,7 @@
                 "security": [{ "Bearer": [] }],
                 "requestBody": {
                     "description": "Registrations object",
-                    "required": true,
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "#/schemas/users/registerSchema"
-                            }
-                        }
-                    }
+                    "required": true
                 }
             }
         }
